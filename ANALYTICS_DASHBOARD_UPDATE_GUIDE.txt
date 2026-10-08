@@ -1,0 +1,18 @@
+MYGRADES v1.28 ANALYTICS DASHBOARD UPDATE
+=========================================
+
+This package redesigns the Teacher Dashboard using the approved dark analytics dashboard reference while keeping existing gradebook, attendance, activities, responsive UI, and single-login security features.
+
+INFINITYFREE UPDATE
+1. Back up the current htdocs files and database.
+2. Replace these files from this package:
+   - teacher.php
+   - assets/app.js
+   - assets/styles.css
+   - api/index.php
+3. Keep your live config/database.php unchanged.
+4. Keep the existing uploads/ folder and its contents.
+5. No new SQL import is required for v1.28 if v1.27.3 security tables are already installed.
+6. Clear browser cache or use Ctrl+F5 after upload.
+
+Dashboard cards and charts use live data from the existing database. No finance/revenue widgets were copied because they are not part of MYGRADES.

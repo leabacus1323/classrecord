@@ -1,0 +1,45 @@
+MYGRADES v1.27.1 ACADEMIC PERIOD COMPLETE
+
+WHAT THIS PACKAGE ADDS
+- Explicit Semester field when adding a subject
+- Explicit School Year field when adding a subject
+- Semester choices: 1st Semester, 2nd Semester, Summer
+- Academic Period management page (admin.php)
+- Standalone subject manager (subjects.php)
+- Subject list/search now includes Semester and School Year
+- Existing Grade Entry, Attendance, Student Portal, Activities/Submissions remain intact
+
+INFINITYFREE UPGRADE
+1. Export/backup your live database first.
+2. Backup htdocs.
+3. Upload this package's application files into htdocs and overwrite matching files.
+4. IMPORTANT: keep your live config/database.php if its credentials are already correct. Do not overwrite it with a local/old credential file.
+5. IMPORTANT: keep your existing uploads/ folder contents. Merge, do not delete.
+6. In phpMyAdmin select your live database and import:
+   sql/MyGrades_v1.27.1_Academic_Period.sql
+7. Log out and log back in.
+8. Hard refresh (Ctrl+F5).
+9. Teacher > Subjects > Add Subject should now show Semester and School Year.
+
+FILES MOST IMPORTANT TO REPLACE
+- assets/app.js
+- api/index.php (already compatible with semester/school_year)
+- teacher.php
+
+NEW FILES TO UPLOAD
+- admin.php
+- subjects.php
+- api/academic_period.php
+- api/subjects.php
+- api/grades.php
+- api/attendance.php
+- api/submissions.php
+- assets/css/
+- assets/js/
+
+DO NOT DELETE
+- config/database.php (live credentials)
+- uploads/submissions/ (student files)
+
+DATABASE NOTE
+Your current class_courses table already contains semester and school_year fields, so the upgrade SQL does not try to add duplicate columns. It creates academic_periods and imports the existing distinct Semester/School Year combinations.

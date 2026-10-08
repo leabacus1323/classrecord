@@ -1,0 +1,2 @@
+MyGrades v1.28.4 Light Surface Contrast
+Dark navy text on light content surfaces; dark dashboard cards preserved.

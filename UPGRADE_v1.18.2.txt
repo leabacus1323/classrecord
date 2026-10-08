@@ -1,0 +1,16 @@
+MyGradebook v1.18.2 - Activities Server Error Fix
+
+WHY THIS UPDATE
+The Activities & Submissions PHP code requires the MySQL tables output_activities and output_submissions.
+If the application files were updated but the v1.17 database migration was skipped, Create & Add to Gradebook can return a generic Server error.
+
+SAFE FIX FOR AN EXISTING DATABASE
+1. Back up your MySQL database.
+2. In InfinityFree -> MySQL Databases -> phpMyAdmin, select your MyGradebook database.
+3. Import: sql/MyGradebook_v1.18.2_Safe_Repair_Upgrade.sql
+4. Upload/overwrite the v1.18.2 application files in htdocs.
+5. KEEP your existing htdocs/config/database.php.
+6. Log out/in or press Ctrl+F5.
+7. Open Activities & Submissions and create a test activity.
+
+The safe repair SQL uses CREATE TABLE IF NOT EXISTS and does not drop existing student, score, attendance, subject, assessment, or account data.

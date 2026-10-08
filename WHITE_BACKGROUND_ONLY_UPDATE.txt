@@ -1,0 +1,27 @@
+MYGRADES v1.28.2 — WHITE BACKGROUND ONLY
+==========================================
+
+Base: MyGrades v1.28 Analytics Dashboard
+
+CHANGE MADE
+-----------
+Only the teacher dashboard page/background canvas was changed to white (#FFFFFF).
+The original v1.28 analytics dashboard styling is retained, including:
+- dark analytics cards and panels
+- statistic card gradients
+- navy sidebar
+- chart colors
+- security alerts
+- quick actions
+- spacing and responsive layout
+
+INFINITYFREE
+------------
+For the smallest update, replace:
+  assets/styles.css
+
+If your deployment uses the mirrored CSS path, also replace:
+  assets/css/styles.css
+
+No SQL import is required.
+Do not replace your live config/database.php or uploads/ folder just for this visual update.

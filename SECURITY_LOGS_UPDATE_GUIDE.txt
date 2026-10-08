@@ -1,0 +1,36 @@
+MYGRADES v1.27.3 - SINGLE LOGIN + STUDENT SECURITY LOGS
+
+IMPORTANT DEPLOYMENT ORDER (InfinityFree)
+1. Back up the live database in phpMyAdmin.
+2. Back up htdocs, especially config/database.php and uploads/.
+3. Import sql/MyGrades_v1.27.3_Single_Login_Security_Logs.sql in phpMyAdmin FIRST.
+4. Upload/replace the v1.27.3 application files. Keep your live config/database.php credentials.
+5. Do NOT delete or replace your existing uploads/ content. Merge folders if needed.
+6. Sign out and sign in again on every account after the update. Existing pre-update browser sessions do not have a v1.27.3 session token.
+
+MAIN FILES CHANGED
+- login.php
+- logout.php
+- index.php
+- teacher.php
+- student.php
+- change_password.php
+- change_password_MYGRADES.php
+- submission_view.php
+- subjects.php
+- admin.php
+- includes/auth.php
+- api/index.php
+- api/student.php
+- assets/app.js
+- assets/styles.css
+- sql/MyGrades_v1.27.3_Single_Login_Security_Logs.sql
+
+BEHAVIOR
+- One active login per account.
+- A second login is blocked while the current session has activity within the last 2 hours.
+- After 2 hours of inactivity, the stale session can be replaced automatically to prevent permanent lockout.
+- Teacher > Student Security Logs shows active student sessions, login/logout events, blocked attempts, and output submission events.
+- Force Logout immediately invalidates the selected student's active session.
+- Password reset or account disable also invalidates the student's active session.
+- IP/device/browser indicators are monitoring evidence only and are not, by themselves, proof of cheating.

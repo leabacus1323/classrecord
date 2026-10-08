@@ -1,0 +1,8 @@
+MyGrades v1.28.4 — Light Surface Contrast
+
+InfinityFree update:
+1. Replace htdocs/assets/styles.css
+2. If your installation also uses htdocs/assets/css/styles.css, replace that copy too.
+3. Press Ctrl+F5 after upload.
+
+No SQL, PHP, JavaScript, database, or uploads changes are required.

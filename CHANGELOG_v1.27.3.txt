@@ -1,0 +1,18 @@
+MYGRADES v1.27.3 - Single Login Security + Student Account Logs
+
+Added
+- One active login session per user account.
+- Second-device login blocking while an active session has recent activity.
+- Two-hour inactivity safety release to prevent permanent account lockout.
+- Student Security Logs page in the teacher dashboard.
+- Active student session list with device, browser, IP, login time, and last seen.
+- Teacher Force Logout for student accounts.
+- Login, logout, blocked-login, forced-logout, and output-submission audit events.
+- Security counters on the teacher dashboard.
+- Password resets and account disabling invalidate active sessions.
+- Output submissions are logged with activity and file information.
+
+Important
+- Import sql/MyGrades_v1.27.3_Single_Login_Security_Logs.sql before uploading the updated PHP files.
+- Existing pre-update sessions will need to sign in again.
+- Device/IP information is a monitoring indicator and is not automatic proof of cheating.

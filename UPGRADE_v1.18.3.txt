@@ -1,0 +1,17 @@
+MyGradebook v1.18.3 - Activities Auto-Setup Fix
+
+WHAT WAS FIXED
+- Replaced SHOW TABLES LIKE ? activity-table detection with information_schema checks.
+- MyGradebook now creates output_activities and output_submissions automatically if missing.
+- The create-activity button no longer incorrectly reports that the activity tables are missing.
+- Student portal uses the same schema bootstrap.
+- Added a compatibility SQL without foreign-key constraints for older InfinityFree databases.
+
+UPGRADE
+1. Back up your database.
+2. Upload/overwrite the application files from this package in htdocs.
+3. KEEP your existing htdocs/config/database.php.
+4. Optional but recommended: import sql/MyGradebook_v1.18.3_Safe_Upgrade.sql in your existing MyGradebook database.
+5. Ctrl+F5, sign in as Teacher, open Activities & Submissions, and create an activity.
+
+If automatic setup cannot run, the API now returns the actual setup detail instead of the misleading generic missing-table message.

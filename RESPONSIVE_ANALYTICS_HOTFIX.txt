@@ -1,0 +1,4 @@
+MyGrades v1.28.3 Responsive Analytics Hotfix
+- Preserves white page background and existing analytics styling.
+- Fixes overlap at 100% browser zoom by adapting dashboard grids earlier.
+- Prevents donut legends, submissions, alerts and tables from overflowing panels.

@@ -1,0 +1,27 @@
+MYGRADES v1.27.2 RESPONSIVE UI UPDATE
+
+Purpose
+- Improves teacher, student, and authentication layouts on phones, tablets, laptops, and large desktops.
+- Keeps the existing PHP/API/database behavior unchanged.
+
+InfinityFree files to replace
+1. teacher.php
+2. student.php
+3. change_password.php
+4. forgot_password.php
+5. assets/styles.css
+6. assets/student.css
+7. assets/auth.css
+
+No SQL import is required for this responsive-only update.
+Do not replace config/database.php with a local copy if your live InfinityFree credentials are already working.
+Do not delete the uploads folder.
+
+Recommended test widths
+- 360-430 px: phones
+- 600-820 px: large phones/tablets
+- 900-1024 px: tablets/small laptops
+- 1280-1440 px: standard laptops/desktops
+- 1600 px+: large displays
+
+After upload, hard-refresh the browser or clear its cache so the embedded CSS refreshes.

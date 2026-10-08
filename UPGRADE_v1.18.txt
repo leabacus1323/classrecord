@@ -1,0 +1,32 @@
+MyGradebook v1.18 - Teacher Submission Viewer
+=============================================
+
+WHAT IS NEW
+- Teachers now see Preview and Download actions beside submitted attachments.
+- PDF files render directly inside a protected Teacher-only viewer.
+- Images render directly inside the viewer.
+- DOCX files get a readable Word text preview.
+- PPTX files get a slide-by-slide text preview.
+- TXT/CSV files render as text.
+- Legacy DOC/PPT and unsupported file types keep a safe Download fallback.
+- The viewer shows student, subject, activity/category, HPS, class, term, submission time, filename, file size and submission note.
+
+UPGRADING FROM v1.17
+1. Back up your current htdocs files.
+2. KEEP your existing htdocs/config/database.php. This package does not include it.
+3. Upload/overwrite the application files from this package into htdocs.
+4. Make sure the NEW file submission_view.php is uploaded directly inside htdocs.
+5. No SQL/database migration is required for v1.18.
+6. Press Ctrl+F5 once after deployment.
+
+FILES MOST IMPORTANT FOR THIS UPDATE
+- submission_view.php (new)
+- api/index.php
+- assets/app.js
+- assets/styles.css
+
+PRIVACY
+The preview page requires an authenticated Teacher session. PDF/image streams also pass through the authenticated Teacher API. Student upload folders remain blocked from direct public browsing.
+
+OFFICE PREVIEW NOTE
+DOCX/PPTX previews extract readable document/slide text. Exact Microsoft Office formatting, images, animations, charts and layout may not be reproduced. Use Download Original when exact formatting matters.

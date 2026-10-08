@@ -1,0 +1,19 @@
+MYGRADEBOOK v1.18.1 UPGRADE
+===========================
+
+1. Back up your current files and database.
+2. Keep your existing htdocs/config/database.php.
+3. Upload all other v1.18.1 files/folders directly into htdocs and overwrite.
+4. If upgrading from v1.17+ and your activity/submission tables already exist,
+   no schema change is required. Optionally import sql/MyGradebook_v1.18.1_Safe_Upgrade.sql.
+5. Press Ctrl+F5 after upload.
+
+Teacher sidebar should include:
+- Dashboard
+- Students
+- Subjects
+- Grade Entry
+- Activities & Submissions
+- Top Performers
+- Attendance
+- Accounts & Passwords
